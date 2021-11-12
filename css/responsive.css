@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .cards-plans {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .card-suport {
+    box-shadow: none;
+  }
+  .card-suport:hover {
+    transform: scale(1);
+  }
+}
