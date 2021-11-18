@@ -1,13 +1,51 @@
 /*HEADER*/
-.contact-box {
-  font-weight: 700;
-  color: white;
-  transition: 0.2s ease-in-out;
-}
-.contact-box:hover {
-  color: #d7d7d7;
+
+.box-nav.stick {
+  position: fixed;
+  box-shadow: 0px 3px 10px 0px #00000042;
+  transition: 0.7s;
+  z-index: 1000000;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
 }
 
+.btn-mobile {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003969;
+  overflow: hidden;
+}
+.open-menu {
+  max-height: 180px !important;
+  transition: 0.4s;
+}
+.menu-closed {
+  width: 100%;
+
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+}
 .nav-link {
   font-size: 1.1rem;
   font-weight: 600;
@@ -85,6 +123,15 @@
 /*//FEATURE*/
 /*OUR-SERVICES*/
 
+.our-services {
+  padding-top: 80px;
+}
+.our-suport {
+  padding-top: 80px;
+}
+.plans {
+  padding-top: 80px;
+}
 .our-services-content h2 {
   color: #bc1b22;
 }
@@ -201,7 +248,7 @@ footer a:hover {
 }
 
 /*//FOOTER*/
-/*ANIMATION*/
+/*ANIMATION ELEMENTS*/
 [data-anima] {
   opacity: 0;
   transition: 0.5s;
@@ -209,6 +256,9 @@ footer a:hover {
 
 [data-anima='top'] {
   transform: translate3d(0, -50px, 0);
+}
+[data-anima='bottom'] {
+  transform: translate3d(0, 50px, 0);
 }
 
 [data-anima='left'] {
@@ -222,4 +272,12 @@ footer a:hover {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transform: scale(1);
+}
+/*MENU STICK*/
+nav.stick {
+  height: 500px;
+}
+/*//ANIMATION ELEMENTS*/
+.show {
+  background: red;
 }
