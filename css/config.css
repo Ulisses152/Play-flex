@@ -3,28 +3,26 @@ html,
 .container-fluid {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", "sans-serif";
+  font-family: 'Nunito', 'sans-serif';
+  overflow-x: hidden;
 }
-.container{
-    padding: 0;
-    
-}
-
-a{
-    text-decoration: none;
-    cursor: pointer;
-    
-
-}
-h2{
-    font-size: 3rem;
-    font-weight: 800;
-}
-p{
-    color: #888888;
-    font-weight: 400;
+.container {
+  padding: 0;
 }
 
-ul{
-    list-style: none;
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+p {
+  color: #888888;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
 }

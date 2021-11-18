@@ -201,3 +201,25 @@ footer a:hover {
 }
 
 /*//FOOTER*/
+/*ANIMATION*/
+[data-anima] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anima='top'] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-anima='left'] {
+  transform: translate3d(-50px, 0, 0);
+}
+[data-anima='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anima].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transform: scale(1);
+}
